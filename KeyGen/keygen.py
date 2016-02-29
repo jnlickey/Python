@@ -1,7 +1,7 @@
 #!/usr/bin/env python -tt
 #######################################
 # Random key generator
-# Created by: Jon Nathan Lickey
+# Created by: J.N.Lickey
 # 20160229
 #######################################
 import re, random, datetime, os
