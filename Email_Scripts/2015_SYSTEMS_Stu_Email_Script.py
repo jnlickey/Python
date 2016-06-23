@@ -27,7 +27,7 @@ for row in inFile:
         row = row.split(",")
         Lname = row[1]
         Fname = row[2]
-        email = row[14]+"@taylor.edu"
+        email = row[14]+"@example.com"
 
         ## Writes output to console and to a file in
         ## the format that an LDIF file will need
