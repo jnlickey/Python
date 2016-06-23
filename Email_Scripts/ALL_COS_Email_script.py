@@ -19,9 +19,9 @@ outFile = open("ALL_COS_STUDENTS.csv",'w')
 outFile.write('dn: cn=all_cos_major, ou=Aliases, dc=example,dc=com\n')
 print('dn: cn=all_cos_major, ou=Aliases, dc=example, dc=com\n')
 # Loops through individual lines within the CSV file, finding all email
-# addresses and splits them into first and last name. Then creates the
-# sends the output to a CSV file in ldif format. To upload the file to
-# ldap, just rename the .csv to .ldif
+# addresses and splits them into first and last name. Then creates and
+# sends the output to a CSV file in ldif format. It then finishes by 
+# changing the file extension on the output file from CSV to LDIF.
 for row in inFile:
     row = row.strip()
     email = row
