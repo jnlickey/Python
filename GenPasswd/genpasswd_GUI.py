@@ -16,8 +16,8 @@ class MyWindow:
         ''' Button to generate password '''
         self.btn = Button(win, text="Generate Password", fg='blue', command=self.GeneratePasswd)
         self.btn.place(x=150, y=140)
-        '''Allow for ENTER key to be pressed to generate password'''
-        self.txtfld1.bind('<Return>',self.GeneratePasswd)
+        '''Allow for ENTER and Number Pad Enter key's to be pressed to generate password'''
+        self.txtfld1.bind('<Return>',self.GeneratePasswd) and self.txtfld1.bind('<KP_Enter>',self.GeneratePasswd)
         
     # Code to generate random password, given a length in numbers
     # NOTE: you have to pass the '*args' to this module in order to
@@ -46,10 +46,8 @@ class MyWindow:
             passwd.append(p)
             L = L + 1
         ''' Extract letters from list and display them in textfield '''    
-        for i in passwd:
-            password = str(password) + i
-            self.txtfld2.delete(0, 'end')
-            self.txtfld2.insert(END, str(password))
+        self.txtfld2.delete(0, 'end')
+        self.txtfld2.insert(END, str(password.join(passwd)))
 
 ### ======================= MAIN ======================= ###        
 alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
