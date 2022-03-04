@@ -16,8 +16,13 @@ class MyWindow:
         ''' Button to generate password '''
         self.btn = Button(win, text="Generate Password", fg='blue', command=self.GeneratePasswd)
         self.btn.place(x=150, y=140)
-    # Code to generate random password, given a length in number
-    def GeneratePasswd(self):
+        '''Allow for ENTER key to be pressed to generate password'''
+        self.txtfld1.bind('<Return>',self.GeneratePasswd)
+        
+    # Code to generate random password, given a length in numbers
+    # NOTE: you have to pass the '*args' to this module in order to
+    # accept the input from 'ENTER' being pressed, and button click
+    def GeneratePasswd(self, *args):
         ''' Variables to use '''
         L = 1
         passwd = []
