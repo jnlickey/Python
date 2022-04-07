@@ -2,8 +2,12 @@
 
 ---
 
-Modify the BASH script to point to the location where you have saved the python virtual environment.
+Download the entire repo named MSADNEW and save this under your home directory (/home/\<your account\>) on a Linux host.
+If it is not saved to this location you will need to modify the BASH script to point to that location where you have saved the python virtual environment.
 <br>
+To reset a users password in Microsoft AD just run the following:
+
+./ADPasswdReset.sh \<userid\>
 <br>
 <br>
 <br>
