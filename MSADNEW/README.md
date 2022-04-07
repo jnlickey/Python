@@ -9,6 +9,7 @@ To reset a users password in Microsoft AD just run the following:
 
 ./ADpwdreset.sh \<userid\>
 <br>
+![](./pwdreset.JPG)
 <br>
 <br>
 
