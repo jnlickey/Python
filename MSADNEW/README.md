@@ -1,4 +1,5 @@
-<H1>MS AD Password Reset Scripts</H1>
+<H3>MS AD Password Reset Scripts</H3>
+Modify the BASH script to point to the location where you have saved the python virtual environment.
 
 
 
