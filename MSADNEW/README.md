@@ -11,6 +11,7 @@ To reset a users password in Microsoft AD just run the following:
 <br>
 ![](./pwdreset.JPG)
 <br>
+Then notify the user via webex what their new temporary password is.
 <br>
 
 
