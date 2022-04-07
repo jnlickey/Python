@@ -7,7 +7,7 @@ If it is not saved to this location you will need to modify the BASH script to p
 <br>
 To reset a users password in Microsoft AD just run the following:
 
-./ADPasswdReset.sh \<userid\>
+./ADpwdreset.sh \<userid\>
 <br>
 <br>
 <br>
