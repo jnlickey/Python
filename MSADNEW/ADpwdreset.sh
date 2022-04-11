@@ -5,6 +5,10 @@ if [[ ${1} = "" || ${1} = "-h" || ${1} = "--help" ]];then
 fi
 
 export loginid=${1}
-source /home/jlickey/scripts/Python/MSADNEW/bin/activate 
-python /home/jlickey/scripts/Python/MSADNEW/ADpasswdResetNEW.py -u ${loginid}
+
+# Modify the path to the python virtual environment if it is not saved in
+# your home directory under MSADNEW
+source /home/${USER}/MSADNEW/bin/activate 
+python /home/${USER}/MSADNEW/ADpasswdResetNEW.py -u ${loginid}
 deactivate
+exit 0
