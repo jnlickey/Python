@@ -4,6 +4,8 @@
 
 Download the entire repo named MSADNEW, as it contains the Python virtual environment, and save this under your home directory (/home/\<your account\>) on a Linux host.
 If it is not saved to this location you will need to modify the BASH script to point to that location where you have saved the python virtual environment.
+
+Modify the ADenv.py file to match your environment.
 <br>
 To reset a users password in Microsoft AD just run the following:
 
