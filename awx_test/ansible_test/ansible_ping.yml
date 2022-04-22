@@ -1,7 +1,0 @@
----
-- host: all
-
-  task:
-  - name: Test Ansible Built in Ping
-    ansible.builtin.ping:
-...
