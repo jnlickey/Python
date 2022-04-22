@@ -5,7 +5,7 @@ import urllib.request
 user = config.user
 passwd = config.passwd
 
-url = 'http://172.16.50.5/remotes'
+url = 'http://someURL'
 
 with urllib.request.urlopen(url) as response:
     html = response.read()
@@ -17,7 +17,7 @@ with urllib.request.urlopen(url) as response:
 
 
 
-#url = "http://172.16.50.5/remotes"
+#url = "http://someURL"
 #http = urllib3.PoolManager()
 #headers = urllib3.make_headers(basic_auth='{user}:{passwd}')
 #r = http.request('GET', url, headers=headers)
